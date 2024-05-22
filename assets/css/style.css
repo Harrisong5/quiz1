@@ -32,3 +32,6 @@ body {
 .btn:hover {
     background-color: white;
 }
+.hide {
+    display: none;
+}
