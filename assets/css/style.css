@@ -1,6 +1,5 @@
 #answers {
     justify-content: space-between;
-    width: 100%;
 }
 *, *::before, *::after {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -25,4 +24,7 @@ body {
 }
 .wrong {
     background-color: red;
+}
+.btn:hover {
+    background-color: white;
 }
