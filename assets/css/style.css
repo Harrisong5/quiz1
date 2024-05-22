@@ -7,7 +7,9 @@
 #qbox {
     padding: 0;
 }
-
+#q {
+    text-align: center;
+}
 body {
     display: flex;
     justify-content: center;
@@ -24,6 +26,8 @@ body {
 }
 .wrong {
     background-color: red;
+}
+.controls {
 }
 .btn:hover {
     background-color: white;
