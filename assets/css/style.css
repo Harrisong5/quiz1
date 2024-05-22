@@ -7,12 +7,22 @@
     }
 #qbox {
     padding: 0;
-    background-color: aquamarine; 
 }
+
 body {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100vw;
     height: 100vh;
+}
+.neutral {
+    background-color: lightskyblue;
+}
+
+.correct {
+    background-color: green;
+}
+.wrong {
+    background-color: red;
 }
