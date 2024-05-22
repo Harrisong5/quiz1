@@ -65,6 +65,9 @@ function showq(question) {
 }
 
 function answerQuestion(isCorrect) {
+    const selectedButton = event.target;
+    const allButtons = document.querySelectorAll('#answers button');
+    
     if (isCorrect) {
         // Handle correct answer
         console.log('Correct!');
@@ -75,6 +78,13 @@ function answerQuestion(isCorrect) {
         console.log('Incorrect!');
         const selectedButton = event.target;
         selectedButton.classList.add('wrong');
+        
     }
+        
+    allButtons.forEach(button => {
+        if (!button.classList.contains('correct')) {
+            button.disabled = true;
+        }
+    });
     nextbtn.classList.remove('hide'); // Show the Next button
 }

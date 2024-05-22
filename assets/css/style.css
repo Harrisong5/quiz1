@@ -21,15 +21,23 @@ body {
     background-color: lightskyblue;
 }
 
+
+.controls {
+}
+.btn:hover {
+    background-color: white;
+}
+button:disabled{
+    border: none;
+    background-color: none;
+}
 .correct {
     background-color: green;
 }
 .wrong {
     background-color: red;
 }
-.controls {
-}
-.btn:hover {
+.correct-answer {
     background-color: white;
 }
 .hide {
