@@ -2,3 +2,17 @@
     justify-content: space-between;
     width: 100%;
 }
+*, *::before, *::after {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+#qbox {
+    padding: 0;
+    background-color: aquamarine; 
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
