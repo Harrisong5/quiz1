@@ -29,7 +29,7 @@ body {
 }
 button:disabled{
     border: none;
-    background-color: none;
+    background-color: blue;
 }
 .correct {
     background-color: green;
@@ -42,4 +42,7 @@ button:disabled{
 }
 .hide {
     display: none;
+}
+#tally {
+    text-align: center;
 }

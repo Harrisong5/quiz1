@@ -3,8 +3,11 @@ const qcontainer = document.getElementById("qcontainer")
 const nextbtn = document.getElementById("nextbtn")
 const qelement = document.getElementById("question")
 const answers = document.getElementById("answers")
+const tally = document.getElementById("tally")
 
 let shuffq, currqindex
+
+let points = 0
 
 startbtn.addEventListener('click', gamestart)
 nextbtn.addEventListener('click', nextq)
@@ -17,6 +20,8 @@ function gamestart() {
     qcontainer.classList.remove('hide')
    nextbtn.classList.remove('hide')
    showq()
+   tally.innerText = `Correct answers: ${points}`;
+   tally.classList.remove('hide')
 }
 
 function nextq() {
@@ -73,6 +78,7 @@ function answerQuestion(isCorrect) {
         console.log('Correct!');
         const selectedButton = event.target;
         selectedButton.classList.add('correct');
+        addpoint()
     } else {
         // Handle incorrect answer
         console.log('Incorrect!');
@@ -87,4 +93,9 @@ function answerQuestion(isCorrect) {
         }
     });
     nextbtn.classList.remove('hide'); // Show the Next button
+}
+
+function addpoint() {
+    points++;
+    tally.innerText = `Correct answers: ${points}`;
 }
